@@ -19,6 +19,9 @@ def main():
     print("\n--- All Tasks ---")
     for t in manager.list_tasks():
         print(t)
+    status = update_status()
+    search = search_by_title()
+    priority = search_by_priority()
 
     # Update status
     print("\n--- Update Status ---")
