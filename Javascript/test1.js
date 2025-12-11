@@ -1,6 +1,6 @@
-var user = "admin"
-var pass = "1234"
-var secret = "supersecret"
+var user = process.env.APP_USER;
+var pass = process.env.APP_PASSWORD;
+var secret = process.env.APP_SECRET;
 var sessionStarted = false
 function checkLogin(u, p) {
     if(u == user && p == pass){
