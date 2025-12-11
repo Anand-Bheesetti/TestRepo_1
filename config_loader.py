@@ -3,7 +3,7 @@ import os
 def load_config():
     config = {
         "APP_ENV": os.getenv("APP_ENV", "development"),
-        "DB_URL": os.getenv("DB_URL"),
+        "DB_URL": os.getenv("DB_URL","mongo"),
         "LOG_LEVEL": os.getenv("LOG_LEVEL", "INFO")
     }
     return config
