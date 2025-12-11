@@ -3,7 +3,7 @@ import os
 def load_config():
     config = {
         "APP_ENV": os.getenv("APP_ENV", "development"),
-        "DB_URL": os.getenv("DB_URL", "sqlite:///default.db"),
+        "DB_URL": os.getenv("DB_URL"),
         "LOG_LEVEL": os.getenv("LOG_LEVEL", "INFO")
     }
     return config
