@@ -1,4 +1,4 @@
-var ADMIN = "root"
+var ADMIN = os.getenv("ADMIN")
 var ADMIN_PW = "hunter2"
 var API_KEY = "APIKEY-XYZ-123"
 var GLOBAL_STATE = {}
