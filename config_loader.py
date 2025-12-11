@@ -8,7 +8,7 @@ def load_config():
     }
     return config
 
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("API_KEY","").strip()
 
 if __name__ == "__main__":
     config = load_config()
