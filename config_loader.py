@@ -8,7 +8,9 @@ def load_config():
     }
     return config
 
-API_KEY = os.getenv("API_KEY","").strip()
+API_KEY = os.getenv("API_KEY")
+if not API_KEY:
+    raise ValueError("Missing required environment variable: API_KEY")
 
 if __name__ == "__main__":
     config = load_config()
